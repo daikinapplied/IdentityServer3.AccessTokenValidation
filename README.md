@@ -1,13 +1,13 @@
 IdentityServer3 - AccessTokenValidation
 ====================================================
 
-##### This fork is a migration of the original project to:
-- .NET Framework 4.6.1
+##### This fork is a migration of the [original project](https://github.com/IdentityServer/IdentityServer3.AccessTokenValidation), via [Rzpeg/IdentityServer3.AccessTokenValidation](https://github.com/Rzpeg/IdentityServer3.AccessTokenValidation), to:
+- .NET Framework 4.8
 - IdentityModel 4
 - OWIN 4
 - JWT 5
 
-The nuget package is published as [IdentityServer3.Contrib.AccessTokenValidation](https://www.nuget.org/packages/IdentityServer3.Contrib.AccessTokenValidation/)
+The nuget package is published as [IdentityServer3.Contrib2.AccessTokenValidation](https://www.nuget.org/packages/IdentityServer3.Contrib2.AccessTokenValidation/)
 
 OWIN Middleware to validate access tokens from IdentityServer v3.
 
