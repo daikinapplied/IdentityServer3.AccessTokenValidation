@@ -111,7 +111,7 @@ stages:
             displayName: '[NuGet.org publish]'
             inputs:
               targetType: filePath
-              filePath: '$(System.DefaultWorkingDirectory)\NuGetPublish.ps1'
+              filePath: '$(Pipeline.Workspace)/$(BuildArtifactName)/NuGetPublish.ps1'
               arguments: '"$(daikinapplied-identityserver-nuget-apikey)" "$(daa-code-signing-subject)" "subject"'
 
 # ~End~
