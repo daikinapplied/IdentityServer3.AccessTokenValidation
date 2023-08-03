@@ -24,8 +24,8 @@ Write-Host "Artifacts Staging Folder: $buildArtifactStagingDirectory"
 
 if ($buildArtifactStagingDirectory -ne 0)
 {
-	robocopy ".\" "$buildArtifactStagingDirectory" NuGet*.ps1 /NP
-	robocopy ".\" "$buildArtifactStagingDirectory" *.nupkg /S /NP
+	robocopy ".\source" "$buildArtifactStagingDirectory" NuGet*.ps1 /NP
+	robocopy ".\source" "$buildArtifactStagingDirectory" *.nupkg /S /NP
 }
 else
 {

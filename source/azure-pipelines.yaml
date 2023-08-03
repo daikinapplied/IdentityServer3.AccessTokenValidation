@@ -71,7 +71,7 @@ stages:
     - task: PowerShell@2
       displayName: '[Stage Pipeline Artifacts]'
       inputs:
-        filePath: '.\NuGetStage.ps1'
+        filePath: '.\source\NuGetStage.ps1'
         arguments: '$(Build.ArtifactStagingDirectory)'
 
     # publishLocation: container, filePath
@@ -111,7 +111,7 @@ stages:
             displayName: '[NuGet.org publish]'
             inputs:
               targetType: filePath
-              filePath: '$(System.DefaultWorkingDirectory)/NuGetPublish.ps1'
+              filePath: '$(System.DefaultWorkingDirectory)\NuGetPublish.ps1'
               arguments: '"$(daikinapplied-identityserver-nuget-apikey)" "$(daa-code-signing-subject)" "subject"'
 
 # ~End~
