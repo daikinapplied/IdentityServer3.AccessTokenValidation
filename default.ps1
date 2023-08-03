@@ -10,7 +10,7 @@ properties {
 	$nuget_path = "$src_directory\.nuget\nuget.exe"
 	
 	$buildNumber = 0;
-	$version = "2.15.0.0"
+	$version = "2.15.1.0"
 	$preRelease = $null
 }
 
@@ -86,7 +86,7 @@ task CreateNuGetPackage -depends Compile {
 	}
 	
 	New-Item $dist_directory\lib\net45 -Type Directory
-	copy-item $output_directory\IdentityServer3.AccessTokenValidation.* $dist_directory\lib\net45
+	copy-item $output_directory\IdentityServer3.AccessTokenValidation.* $dist_directory\lib\net48
 
 	copy-item $src_directory\IdentityServer3.AccessTokenValidation.nuspec $dist_directory
 	exec { . $nuget_path pack $dist_directory\IdentityServer3.AccessTokenValidation.nuspec -BasePath $dist_directory -o $dist_directory -version $packageVersion }
