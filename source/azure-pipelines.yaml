@@ -66,7 +66,7 @@ stages:
       displayName: '[Build .NET Framework NuGet packages]'
       inputs:
         targetType: filePath
-        filePath: '.\NuGetPackage.ps1'
+        filePath: '.\source\NuGetPackage.ps1'
 
     - task: PowerShell@2
       displayName: '[Stage Pipeline Artifacts]'
