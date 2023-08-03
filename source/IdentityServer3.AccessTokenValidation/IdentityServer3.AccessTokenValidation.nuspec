@@ -2,7 +2,7 @@
 
 <package>
   <metadata>
-    <id>IdentityServer3.Contrib2.AccessTokenValidation</id>
+    <id>Daikin.IdentityServer3.AccessTokenValidation</id>
     <version>$version$</version>
     <title>IdentityServer3 - Access Token Validation for OWIN 4</title>
     <authors>Brock Allen,Dominick Baier,Stanislav,RecursiveGeek</authors>

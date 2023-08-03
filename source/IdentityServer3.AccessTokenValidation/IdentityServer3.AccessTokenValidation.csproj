@@ -123,7 +123,7 @@
       <Link>default.licenseheader</Link>
     </None>
     <None Include="app.config" />
-    <None Include="AccessTokenValidation.nuspec" />
+    <None Include="IdentityServer3.AccessTokenValidation.nuspec" />
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

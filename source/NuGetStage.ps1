@@ -25,7 +25,7 @@ Write-Host "Artifacts Staging Folder: $buildArtifactStagingDirectory"
 if ($buildArtifactStagingDirectory -ne 0)
 {
 	robocopy ".\source" "$buildArtifactStagingDirectory" NuGet*.ps1 /NP
-	robocopy ".\source" "$buildArtifactStagingDirectory" IdentityServer3.Contrib2.*.nupkg /S /NP
+	robocopy ".\source" "$buildArtifactStagingDirectory" Daikin.*.nupkg /S /NP
 }
 else
 {

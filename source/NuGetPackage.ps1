@@ -74,7 +74,7 @@ Function BuildNuGet
 # ~~~[Main Body]~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 # ~~ .NET Framework NuGet packaging (.NET Standard and .NET Core projects can build this automatically in Visual Studio 2017/2019) ~~
-BuildNuGet "IdentityServer3.AccessTokenValidation" "IdentityServer3.Contrib2.AccessTokenValidation" $PSScriptRoot
+BuildNuGet "IdentityServer3.AccessTokenValidation" "Daikin.IdentityServer3.AccessTokenValidation" $PSScriptRoot
 
 exit 0
 # ~End~
